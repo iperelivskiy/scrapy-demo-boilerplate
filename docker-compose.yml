@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  demo:
+    build: .
+    working_dir: /code
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    environment:
+      - TERM=linux
+    # command: python demo/app.py
