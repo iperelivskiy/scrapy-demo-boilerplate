@@ -1,3 +1,6 @@
+bpython
 tornado
 scrapy
-bpython
+scrapyd
+scrapy-jsonrpc
+httpie
