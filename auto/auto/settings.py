@@ -58,9 +58,10 @@ SPIDER_MIDDLEWARES = {
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
-#EXTENSIONS = {
-#    'scrapy.extensions.telnet.TelnetConsole': None,
-#}
+EXTENSIONS = {
+   # 'scrapy.extensions.telnet.TelnetConsole': None,
+    'scrapy_jsonrpc.webservice.WebService': 500,
+}
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
@@ -88,3 +89,7 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+JSONRPC_ENABLED = True
+JSONRPC_HOST = '0.0.0.0'
+JSONRPC_PORT = [6080, 6081]

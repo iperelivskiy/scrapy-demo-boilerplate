@@ -7,7 +7,9 @@ services:
     volumes:
       - .:/code
     ports:
-      - "8000:8000"
+      - "6800:6800"
+      - "6080:6080"
+      - "6081:6081"
     environment:
       - TERM=linux
-    # command: python demo/app.py
+    command: bash -c "cd auto && scrapyd"
