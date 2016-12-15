@@ -4,3 +4,5 @@ scrapy
 scrapyd
 scrapy-jsonrpc
 httpie
+peewee
+pdb
